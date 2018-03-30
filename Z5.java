@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class Z5 {
 
 public static boolean isPalindrome(String text) {
-    text = text.replaceAll("\\W","");//удаляем все ненужное
+    text = text.replaceAll("\\W","");
     StringBuilder strBuilder = new StringBuilder(text);
-    strBuilder.reverse(); //переворачиваем строку
-    String invertedText = strBuilder.toString();//присваиваем перевернутую строку
-    return text.equalsIgnoreCase(invertedText) ;//возвращаем сравнение двух строк вне зависимости от регистра
-
+    strBuilder.reverse(); 
+    String invertedText = strBuilder.toString();
+    return text.equalsIgnoreCase(invertedText);
 }
 
 public static void main(String args[]){
@@ -19,5 +18,4 @@ public static void main(String args[]){
 	boolean s = isPalindrome(input);
     System.out.println(s);
 }
-
 }

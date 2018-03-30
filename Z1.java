@@ -7,7 +7,7 @@ public class Z1 {
 		int N, i, j, b;
 		double a;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter N: ");
+        System.out.println("Enter N: ");
         N = sc.nextInt();
         for (i = 2; i <= N; i++) {
 			j=2;
